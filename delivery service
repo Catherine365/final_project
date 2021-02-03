@@ -1,4 +1,4 @@
--- Сервис по доставке продуктов из сетевого магазина "Пятерочка".
+-- Сервис по доставке продуктов из сетевого магазина "Пятерочка", магазинов взято 100
 
 create database final_project;
 
@@ -245,7 +245,7 @@ INSERT INTO `rubrics` (`id`, `name`) VALUES ('10', 'et');
 CREATE TABLE products (
   id int(10) unsigned NOT NULL primary key,
   name VARCHAR(255) COMMENT 'Название',
-  desription TEXT COMMENT 'Описание',
+  description TEXT COMMENT 'Описание',
   price DECIMAL (11,2) COMMENT 'Цена',
   catalog_id INT UNSIGNED,
   created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
@@ -253,106 +253,106 @@ CREATE TABLE products (
   KEY index_of_catalog_id (catalog_id)
 ) COMMENT = 'Товарные позиции';
 
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('1', 'cum', 'Exercitationem voluptatem accusamus ratione fuga alias. Voluptas qui ut magnam. Voluptate nam possimus deleniti quam et omnis consectetur.', '244.30', 1, '2020-08-01 12:07:56', '2020-03-02 01:19:52');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('2', 'id', 'Natus sed dolore sunt nobis. Ducimus aut officia sunt cumque repellendus inventore. Quasi doloremque quae ipsam.', '93.28', 2, '2020-06-07 21:12:50', '2020-07-23 15:37:33');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('3', 'laudantium', 'Et nisi ea quia accusantium. Alias aut nihil quo neque rerum. Sequi ullam vero occaecati officia.', '1.90', 3, '2020-06-11 23:17:23', '2020-05-13 20:08:32');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('4', 'enim', 'Minima laboriosam non velit ducimus sapiente. Deserunt neque impedit tempora ipsam autem. Ea aut libero maxime. Sed dolor fugit repudiandae a atque.', '3424112.62', 4, '2020-09-20 02:11:49', '2020-11-13 03:01:02');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('5', 'id', 'Iste quasi quis enim voluptas libero reprehenderit. Sit incidunt facere corrupti fugiat doloribus non dolor. Minima nostrum enim minus vel repellendus quae omnis.', '5.57', 5, '2020-08-07 09:59:01', '2020-04-16 18:38:43');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('6', 'laborum', 'Aliquid accusamus omnis illo vel eaque eum. Et odit incidunt mollitia doloribus voluptas sint nemo.', '1736.20', 6, '2020-02-05 04:27:09', '2020-02-20 13:24:56');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('7', 'ut', 'Optio est aut reprehenderit dolores id delectus ipsa. Dicta quisquam ex dolores dolor asperiores nobis atque. Et cupiditate rerum similique doloremque in repudiandae ut.', '840.25', 7, '2020-03-20 11:09:15', '2020-09-05 18:56:35');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('8', 'mollitia', 'Eos odit repudiandae eius doloremque aut dolorum. Dignissimos assumenda praesentium illo est tenetur. Voluptate aspernatur distinctio temporibus accusantium voluptatem earum repellat.', '1.43', 8, '2020-02-12 19:54:09', '2020-10-13 05:02:44');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('9', 'sit', 'Odit accusantium quia ad autem in. Officia doloribus nulla repellendus voluptas expedita. Veritatis alias accusantium laboriosam. Fugiat blanditiis corrupti sunt dolorem veritatis culpa.', '197287685.53', 9, '2020-08-15 08:11:29', '2020-10-25 13:24:03');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('10', 'sint', 'Velit sed ad deleniti voluptatem et similique. Perspiciatis aut rerum delectus expedita quas veritatis esse. Sed soluta sint repellendus omnis esse quia.', '238.52', 10, '2020-10-28 06:36:57', '2020-03-05 03:51:26');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('11', 'occaecati', 'Nemo modi incidunt beatae esse numquam. Veniam eum unde sed sed dolorem aut.', '67.39', 11, '2021-01-28 21:12:16', '2020-08-15 15:19:26');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('12', 'nobis', 'Rerum tempore corporis et quia animi dolor. Laborum quasi et ut nostrum. Voluptatem eos dolor impedit. Vel numquam totam et aut quia.', '176.00', 12, '2020-07-02 12:19:07', '2020-11-30 09:35:36');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('13', 'commodi', 'Quia blanditiis expedita nihil consequuntur et sunt. Aspernatur velit quia qui ad voluptatem enim vero. Occaecati repellendus sunt aut repudiandae. Consequatur alias ipsum labore sunt.', '182627.50', 13, '2020-05-22 15:37:34', '2020-07-20 13:16:57');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('14', 'delectus', 'Soluta ducimus cumque qui reiciendis incidunt temporibus veritatis. Nobis libero nobis provident aut dolorem quam. Dicta nesciunt vitae omnis quia et porro animi.', '9.06', 14, '2020-03-28 06:15:40', '2020-12-13 22:21:28');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('15', 'hic', 'Consectetur dolores velit quo aliquam saepe occaecati. Quasi harum dolor ipsam id. Sit aut sunt omnis et adipisci exercitationem. Provident aliquid occaecati blanditiis ut quia omnis quia.', '17.30', 15, '2020-06-14 23:13:29', '2021-01-24 07:46:41');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('16', 'voluptatum', 'Soluta saepe id maiores quisquam non fuga harum. Exercitationem neque voluptatum sunt quod inventore. Ut rem nisi aut repellendus tempora iste excepturi quidem. Mollitia nemo voluptatem aspernatur.', '0.00', 16, '2020-10-14 20:14:50', '2020-03-19 08:20:09');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('17', 'tempore', 'Sunt velit dicta laborum et aperiam. Eaque amet tempore non maiores similique laudantium qui maxime. Dignissimos qui sed eveniet rerum corrupti assumenda laudantium.', '99.67', 17, '2021-01-20 04:49:08', '2021-01-21 23:01:09');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('18', 'voluptatem', 'Autem sapiente necessitatibus consequuntur rerum ea adipisci. Doloremque vel qui nam ducimus sit. Nostrum laboriosam similique et id nulla excepturi. Aut qui dolorem est exercitationem.', '7288.42', 18, '2020-04-10 09:31:30', '2020-08-15 19:19:57');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('19', 'atque', 'Esse rerum numquam adipisci. Consequatur perferendis accusamus rerum quis ut totam est. Enim rerum et id veniam id vero voluptatibus.', '44.28', 19, '2020-12-09 09:32:25', '2020-04-19 08:46:30');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('20', 'pariatur', 'Asperiores earum vitae qui nisi aperiam quidem ea. Minima saepe iste velit culpa ut. Voluptatem itaque minima quas fugit.', '0.00', 20, '2020-12-22 07:01:31', '2020-09-14 22:48:58');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('21', 'et', 'Quisquam debitis ut doloremque maxime natus facere. Nulla iusto ipsum itaque ea excepturi. Earum sunt eos soluta velit quas. Autem rerum praesentium perferendis ipsam voluptatibus maxime.', '811708093.32', 21, '2020-04-25 05:31:56', '2021-01-29 18:37:25');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('22', 'non', 'Omnis aut ipsum autem id expedita et. Repudiandae maxime qui nam delectus ullam quis consectetur. Vero corporis esse ut consectetur eum neque nam cum.', '3398749.00', 22, '2020-02-01 02:43:25', '2020-04-06 20:15:03');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('23', 'quia', 'Accusamus et voluptate at doloremque voluptate pariatur quia id. Voluptatibus deleniti et quae tempora cum distinctio. Aut rerum et dolores enim et sed sed. Consequuntur dolorum repudiandae animi a.', '50967.80', 23, '2020-02-13 08:07:29', '2020-08-25 18:13:31');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('24', 'sunt', 'Amet quaerat saepe quisquam. Ullam nihil quasi sint eos molestias quo et. Explicabo libero aspernatur sed molestias adipisci.', '347524451.10', 24, '2020-03-08 04:53:34', '2020-09-21 14:01:07');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('25', 'cupiditate', 'Sequi reprehenderit vel impedit vel. Est perferendis non repudiandae omnis quia quisquam. Nesciunt nesciunt ut libero incidunt laborum deserunt sed.', '55341.58', 25, '2020-02-11 08:04:58', '2020-03-16 02:45:40');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('26', 'illo', 'Dolorem quia ex sed dolor debitis quia id. Praesentium cupiditate consequatur dicta dolor autem nihil. Porro quis voluptates velit nesciunt. Ut qui animi harum quod provident.', '3113.61', 26, '2020-12-05 07:08:23', '2020-06-13 18:29:11');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('27', 'rem', 'Nesciunt cumque sunt sed provident est. Et et molestiae ipsam blanditiis. Quaerat eveniet at commodi consequatur blanditiis aut distinctio.', '482123460.70', 27, '2020-06-22 20:10:04', '2020-02-02 16:33:29');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('28', 'autem', 'Pariatur atque magnam harum qui. Sit suscipit qui asperiores vero consequatur in. Quia qui tempore facilis quasi vel maiores. Aut neque rerum aperiam iusto quam soluta est.', '216999068.12', 28, '2020-10-11 05:12:48', '2020-06-11 19:42:18');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('29', 'quasi', 'Sint aperiam ut sit deleniti. Soluta qui omnis eius necessitatibus. Dolor autem exercitationem adipisci quia. Laboriosam perferendis quae doloremque nisi quia.', '7411440.40', 29, '2020-10-08 18:54:31', '2020-06-13 10:15:54');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('30', 'qui', 'Maxime necessitatibus error qui alias iure odio. Dolores dolor necessitatibus asperiores atque maiores.', '0.82', 30, '2020-04-01 04:28:33', '2020-11-03 04:58:20');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('31', 'nostrum', 'Sit nam qui ratione sit dolores. Quia unde cum architecto fugiat qui. Eligendi maxime culpa explicabo quo est maiores qui sit.', '3518870.00', 31, '2020-10-18 21:22:35', '2020-04-14 08:41:19');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('32', 'ea', 'Ex voluptatem sunt odio accusantium. Necessitatibus vitae iusto repudiandae delectus. Porro ut nihil velit earum itaque est laudantium.', '209077.01', 32, '2020-03-13 07:58:10', '2020-11-19 22:47:00');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('33', 'unde', 'Occaecati in aliquid velit quo modi non quas. Quasi ducimus adipisci sed sunt accusantium ut accusantium. Aperiam iusto ratione perferendis sit praesentium dolorem.', '63043192.77', 33, '2020-12-08 16:42:36', '2020-11-13 01:29:20');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('34', 'quidem', 'Enim nulla natus est sit. Ex ad ut amet quis quia et commodi in. Deleniti itaque et aut iure qui nesciunt.', '592.36', 34, '2020-08-25 18:20:41', '2020-05-26 03:22:16');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('35', 'quod', 'Quas nihil delectus debitis mollitia provident quos. Maiores eum ratione eum esse eveniet est quidem. Delectus nulla nisi doloremque est.', '3.03', 35, '2020-07-12 15:39:11', '2020-04-24 09:59:25');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('36', 'et', 'Qui quo inventore qui hic vitae. Dolores cupiditate beatae qui nihil sint et. Amet voluptatem aliquid nobis iste non.', '6.10', 36, '2020-12-30 22:48:49', '2020-10-09 23:55:14');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('37', 'nobis', 'Voluptatem voluptatem non veniam aut libero. Deleniti maiores tempora aspernatur qui. Et veniam labore qui nemo magnam. Qui error dolores est.', '3185.27', 37, '2020-09-17 12:39:20', '2020-09-18 19:21:51');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('38', 'consequuntur', 'Dolorum quasi et quasi fuga fugiat ad. Voluptatem dolore culpa optio et omnis. Recusandae aliquam aut cum nisi unde.', '475306.20', 38, '2020-08-03 18:40:15', '2020-03-13 07:31:19');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('39', 'qui', 'Eos aut quo in repudiandae. Aut nisi voluptatem quod. Dolor explicabo non reprehenderit asperiores qui delectus aut. Cupiditate nulla sunt esse deserunt.', '353370.40', 39, '2020-05-29 15:26:55', '2020-09-26 13:56:50');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('40', 'vero', 'Numquam atque quia libero ab. Omnis vitae quibusdam nihil blanditiis placeat. Reprehenderit quas omnis quibusdam tenetur ut.', '5.90', 40, '2020-08-31 18:38:20', '2020-12-04 21:45:01');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('41', 'rerum', 'Voluptatum minima sit ad et vero praesentium. Culpa fugit architecto quis consequatur. Dolorem natus id enim officia excepturi.', '51.38', 41, '2020-11-03 12:08:06', '2020-11-24 22:20:24');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('42', 'provident', 'Aut ex dolorem assumenda voluptatem. Rem in recusandae recusandae et. Consequatur enim quo ea quia exercitationem doloremque.', '4.62', 42, '2020-11-08 17:51:27', '2020-06-07 10:14:57');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('43', 'voluptas', 'Quae et ea debitis nobis. Quia qui unde quasi nisi. Esse est assumenda aspernatur earum. Nemo vitae reprehenderit saepe ipsum quasi est aliquam.', '93.69', 43, '2020-12-14 18:54:39', '2020-08-22 10:18:21');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('44', 'libero', 'Occaecati maxime corrupti exercitationem temporibus repudiandae. Vero nulla in et non reprehenderit. Minima magni nihil rem et.', '14335.09', 44, '2020-11-20 22:04:37', '2020-12-13 17:09:43');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('45', 'odio', 'Vel qui numquam assumenda corporis et accusamus illum rerum. Quo culpa harum maxime ipsa quia in. Excepturi non voluptatem et.', '831103244.00', 45, '2020-08-14 03:57:12', '2020-07-11 03:16:01');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('46', 'voluptas', 'Necessitatibus commodi nulla quia. Facere sed sit est vel. Accusamus quia culpa distinctio minima.', '78.00', 46, '2020-10-23 05:59:15', '2020-12-06 02:26:04');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('47', 'dolor', 'Rerum non ipsam dolorem totam aut dolorem ea. Quia consequuntur aliquam voluptas blanditiis voluptatem. Qui nesciunt magni quaerat voluptates. Eius veniam necessitatibus consequuntur temporibus.', '248051.68', 47, '2020-10-26 00:55:21', '2021-01-29 07:12:43');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('48', 'accusantium', 'Beatae optio omnis ut velit. Eos unde distinctio reprehenderit excepturi. Esse assumenda ut iusto praesentium omnis.\nUt dolor consequatur aspernatur quasi. Blanditiis velit officia esse.', '549948.97', 48, '2020-10-18 22:03:48', '2020-11-25 19:24:25');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('49', 'ut', 'Soluta sint ducimus voluptatem molestias quo eius et. Vel unde error aliquam ut.', '7235.96', 49, '2020-03-15 19:25:11', '2020-10-01 13:41:29');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('50', 'voluptas', 'Distinctio ratione minus voluptatem repellendus ab eum. Ducimus molestiae et qui impedit aut totam odio ipsum.', '192124138.07', 50, '2020-05-13 18:23:39', '2020-04-20 02:44:03');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('51', 'illum', 'Et quidem est nesciunt doloremque. Est et autem voluptatem cumque. Eum dolor debitis fuga et. Doloribus aliquam sequi aut.', '11514.00', 51, '2021-01-12 00:34:58', '2020-07-04 10:11:57');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('52', 'corrupti', 'Sit omnis sunt dignissimos fugiat deleniti non et fugiat. Corrupti et qui quidem qui magni. Nemo vel id aut expedita est eum modi. Placeat est quis doloremque delectus magni et.', '469654.54', 52, '2020-08-19 08:22:17', '2020-05-08 18:41:29');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('53', 'non', 'Incidunt assumenda vel vel qui rem eaque. Est quaerat est aspernatur numquam officiis.', '0.47', 53, '2020-07-13 14:28:23', '2020-10-17 04:05:29');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('54', 'a', 'Id consectetur necessitatibus tenetur omnis excepturi expedita. Voluptas et nostrum illo inventore. Voluptatibus qui autem quo delectus.', '0.00', 54, '2020-05-19 19:38:00', '2020-06-24 10:30:56');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('55', 'qui', 'Et nulla numquam non non atque sequi numquam velit. Rerum rem necessitatibus inventore autem reprehenderit. Earum maiores unde incidunt aspernatur voluptatem itaque.', '39228583.68', 55, '2020-05-25 06:54:37', '2020-05-07 07:01:33');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('56', 'non', 'Autem odio culpa qui sint vitae maxime. Et et minima sint soluta dolor accusamus nemo harum. Ducimus quasi quia id numquam dolor tempore similique. Dolorum aperiam voluptas iste saepe enim.', '4.90', 56, '2020-06-05 01:24:12', '2020-10-28 21:49:27');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('57', 'rerum', 'Dolor sint laborum nulla aperiam incidunt iste quo. Officiis facilis delectus quae qui ipsa totam.', '58.50', 57, '2021-01-03 19:44:59', '2021-01-27 03:16:19');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('58', 'consequatur', 'Omnis sint totam consequatur optio. Ratione laudantium doloribus laudantium aspernatur asperiores iure deserunt. Mollitia atque cumque occaecati aut repellendus asperiores quibusdam.', '101.95', 58, '2020-05-12 08:53:51', '2020-09-17 06:04:44');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('59', 'ducimus', 'Repudiandae perspiciatis modi ex mollitia sed omnis perspiciatis. Odit iste ad repellendus et. Atque quis rerum quaerat quidem. Omnis alias quod dolores officiis sed consequatur nihil magnam.', '111950.41', 59, '2020-09-12 00:03:58', '2021-01-16 17:21:16');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('60', 'quae', 'Facilis voluptatem non ut necessitatibus earum. Nostrum modi qui ratione illum. Ut dolor hic dolorem et non dolores. Non maxime cum quas maiores dolore.', '2844.00', 60, '2020-10-01 06:19:33', '2020-11-13 14:00:12');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('61', 'eligendi', 'Doloremque voluptatem accusamus eos asperiores. Sequi et at tenetur. Nulla quia iure odio necessitatibus ducimus sunt magnam sed. Et dignissimos voluptates rerum nihil ea asperiores optio.', '1763.00', 61, '2020-10-25 02:34:39', '2020-10-12 15:23:42');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('62', 'cum', 'Vitae aut ipsa hic. Et fugiat mollitia laborum sunt. Ducimus dolore quidem et dolore reprehenderit ut quas. Dolor tenetur est commodi ex explicabo vero commodi beatae.', '917086.08', 62, '2020-04-23 16:06:42', '2020-03-07 21:34:27');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('63', 'recusandae', 'Quidem id aperiam eos officia qui et. Atque nesciunt dolor magnam sit autem. Quidem totam et non ut quos earum. Molestiae et odio sit et.', '29709618.44', 63, '2021-01-28 03:16:49', '2020-03-28 11:17:45');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('64', 'accusamus', 'Recusandae quae aperiam culpa inventore facilis. Ut aliquam repellendus sed hic sit non. Natus dignissimos vitae alias labore.', '387.72', 64, '2020-11-26 19:37:24', '2020-09-06 18:18:02');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('65', 'ipsa', 'Nobis qui ut velit quibusdam rerum ut. Inventore reiciendis dolorum quae non repudiandae occaecati ut corrupti. Consequatur aut praesentium omnis explicabo vitae quia. Quod optio nemo aut minima.', '818.45', 65, '2020-05-06 15:38:10', '2020-10-04 13:56:58');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('66', 'at', 'Rerum velit deserunt aspernatur natus quos qui. Corporis aliquid placeat sit quasi unde maiores. Et quisquam quae ut qui.', '267.43', 66, '2020-07-27 09:36:57', '2020-08-11 22:29:26');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('67', 'voluptatem', 'Modi consequatur qui officia similique. Provident et quo sit rem autem.', '2882076.06', 67, '2021-01-04 04:34:40', '2020-05-16 07:25:47');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('68', 'et', 'Aut ullam nisi optio repudiandae et aut. Consequatur porro fuga soluta harum. Aut sapiente optio libero repudiandae dicta voluptates culpa.', '322122.04', 68, '2020-12-31 00:58:34', '2020-03-31 10:34:35');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('69', 'non', 'Ducimus ullam omnis aut dolores minima. Sit eum dolores quia soluta repellat officia sed esse. Non consequuntur officia rerum facilis.', '28.54', 69, '2021-01-24 18:39:33', '2020-05-01 10:15:51');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('70', 'odit', 'Voluptatem nulla quod illum corrupti totam aliquid officiis. Et nulla porro natus dolorem architecto sequi sed. Iure voluptate quo et corrupti.', '0.00', 70, '2020-03-13 10:26:22', '2020-10-16 17:45:01');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('71', 'qui', 'Eveniet nemo dolorum maxime eos voluptatem. Magnam labore dolor ut facere quod voluptates. Vero et enim tempore aut accusantium autem. Iure labore et explicabo recusandae.', '242294.99', 71, '2020-06-12 08:37:12', '2020-04-04 21:15:25');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('72', 'nostrum', 'Error explicabo iusto et nulla quo in eos. Eum nam perferendis aut sed vitae omnis atque ut. Possimus aut sit consequatur et et unde. Dicta nihil ipsum qui quo.', '7242874.71', 72, '2020-03-11 12:20:24', '2020-11-30 14:15:20');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('73', 'id', 'Tempora et aut est consequatur fugit dolor numquam. Eaque sequi aperiam architecto sequi. Repellendus nam tempora quam sapiente. Velit omnis repudiandae cum est odio nobis explicabo expedita.', '3009522.31', 73, '2020-04-01 22:11:05', '2020-02-06 00:09:19');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('74', 'fugiat', 'Recusandae numquam a necessitatibus necessitatibus. At eligendi excepturi aliquid. Omnis occaecati optio aspernatur labore magni. Atque et ullam eos quae enim.', '0.00', 74, '2020-12-30 05:28:58', '2021-01-29 04:29:47');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('75', 'et', 'Autem voluptas facere mollitia et facilis et eligendi. Placeat enim sit sit sequi dolor. Aspernatur in libero qui assumenda quae quis. Officia quos voluptas praesentium et consequatur sint.', '0.00', 75, '2020-07-12 16:17:09', '2020-10-27 17:16:35');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('76', 'vel', 'Facere nisi culpa tempore enim hic aut. Ut exercitationem quibusdam repellendus dolores.', '4.00', 76, '2020-10-16 09:04:08', '2020-02-02 23:16:14');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('77', 'voluptatem', 'Quos porro quasi dolore et. Quae voluptatem sint quia rerum. Qui quo voluptas quia possimus et.', '4605.44', 77, '2020-04-27 11:12:28', '2020-08-09 20:57:27');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('78', 'aut', 'Quia necessitatibus a repellat qui dolorum. Dolorem et atque doloremque ut eveniet. Sequi praesentium quae eligendi minima. Vel modi id et harum.', '2604333.00', 78, '2020-09-05 08:50:58', '2020-09-07 15:33:13');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('79', 'voluptatum', 'Iure eos tempora omnis eum soluta et. Voluptatem ea perferendis quos soluta voluptas aut. Consequatur veritatis illum officiis dolor repellat suscipit nobis. Explicabo est maxime qui.', '279.02', 79, '2020-12-07 17:30:38', '2020-02-01 01:49:38');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('80', 'vel', 'Excepturi rerum molestiae voluptatem porro nam. Qui qui dolor doloremque magni quo. Mollitia maxime et delectus commodi sit a.', '7.67', 80, '2020-06-25 17:27:12', '2020-06-01 02:19:58');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('81', 'at', 'Vero commodi alias et doloremque vero. Voluptas ut qui consequatur voluptatum qui dolores maiores. Occaecati cupiditate omnis est soluta architecto non et.', '63923.47', 81, '2020-10-27 03:00:29', '2020-11-01 13:39:42');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('82', 'necessitatibus', 'Modi et eius molestiae aliquam vitae laudantium quia. Aut quidem consectetur nihil tenetur. Aut sint unde qui et. Ducimus cum maxime nemo est consectetur debitis.', '21189541.88', 82, '2020-08-10 18:41:04', '2020-11-29 10:31:33');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('83', 'natus', 'Dolore in cumque sed repellendus autem ut suscipit. Qui doloremque nihil aliquam aut. Numquam velit ea non quas nostrum. Ut architecto magnam aut.', '8.19', 83, '2020-03-17 17:18:19', '2020-02-04 15:48:08');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('84', 'ipsum', 'Rerum rerum voluptatibus in pariatur. In sit et illo qui occaecati et sapiente eos.', '228086.61', 84, '2021-01-18 12:16:38', '2020-10-23 07:43:32');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('85', 'possimus', 'Et odit id quia consequuntur nihil labore voluptates. Nihil itaque ex velit labore libero consequatur. Ex dolor optio aliquid natus deserunt tempore.', '5973.27', 85, '2020-05-05 13:54:44', '2020-04-15 18:51:03');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('86', 'dolorum', 'Voluptas commodi nesciunt delectus ut natus sit perferendis. Aperiam non debitis sit quia. Est corrupti est reprehenderit. Quo et nemo ut aperiam.', '0.00', 86, '2020-02-28 19:25:28', '2020-07-30 10:49:51');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('87', 'quasi', 'Temporibus et eum ut vero enim nemo non sunt. Expedita sed amet iusto necessitatibus. Inventore officia accusantium non neque voluptatem.', '210.26', 87, '2020-10-30 01:26:39', '2020-02-17 17:20:35');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('88', 'expedita', 'Ipsum sunt sit ut voluptate accusantium magnam at. Quam ea eos excepturi. Odio quia dicta quisquam reiciendis. Doloremque porro dolor natus sed qui error.', '276208.83', 88, '2020-10-20 22:39:54', '2020-05-20 10:07:04');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('89', 'sed', 'Temporibus aut est amet fugit. Architecto sit tenetur vero dolorem fugit architecto. Quaerat quasi illo dolores voluptatem incidunt.', '4.40', 89, '2020-05-21 22:27:56', '2020-07-03 15:29:28');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('90', 'odio', 'Vel nisi hic sed dolorem fuga consequatur officiis quia. Esse aliquam nam odio molestiae et vel. Saepe aut doloremque incidunt voluptatem.', '0.00', 90, '2020-06-27 07:03:57', '2020-02-25 19:05:49');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('91', 'asperiores', 'At qui dolorum possimus qui voluptate inventore. Ab ea consequuntur amet eum ut nisi. Qui dolor nisi laboriosam aut nobis molestiae aut. Optio omnis mollitia inventore velit.', '165252381.65', 91, '2020-10-25 00:24:54', '2020-03-18 12:32:25');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('92', 'commodi', 'Illum sed quasi illo consequatur iusto et ut ipsam. Placeat nemo nam rerum reiciendis. Et esse sed sit sit voluptatem quia.\nNatus et veritatis est quia nobis harum quia. Dignissimos nam a sunt minus.', '0.00', 92, '2020-08-20 11:16:24', '2020-11-19 09:02:52');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('93', 'dicta', 'Impedit et cumque est sint. Quisquam occaecati aut velit sunt et optio amet. Repudiandae quae enim aut. Impedit nisi in officiis fugiat quis.', '27804.80', 93, '2020-10-27 08:35:45', '2020-03-30 10:20:53');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('94', 'commodi', 'Odit beatae consequuntur deserunt culpa voluptatibus possimus. Deserunt sit earum voluptatibus accusantium. Non qui et quisquam voluptatem.', '950.00', 94, '2020-04-06 15:01:10', '2020-05-11 02:09:24');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('95', 'sed', 'Et sed culpa sed est expedita recusandae praesentium molestiae. Animi consequatur ea id sed autem esse et eum. Nihil provident quia alias et autem.', '0.00', 95, '2020-07-27 14:19:31', '2020-11-13 04:44:30');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('96', 'nesciunt', 'Placeat dolore sit est laudantium aut neque. Fugit pariatur sed voluptas aut. Assumenda repudiandae cupiditate quis explicabo dignissimos. Quia qui sunt quod doloremque dolor quam.', '10.14', 96, '2020-12-21 12:46:21', '2020-06-14 01:10:59');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('97', 'labore', 'Aut vel inventore officia. Nulla rerum dicta in. Et nihil nam est sequi quia non. Eveniet quisquam temporibus eos quisquam voluptates saepe tenetur.', '5.27', 97, '2020-05-27 14:06:39', '2020-11-30 22:56:27');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('99', 'quae', 'Rerum qui illum omnis et et sint et. A quae quis in ipsam vel possimus esse. Reprehenderit est voluptate at quia unde.', '9.83', 99, '2020-06-07 23:13:23', '2021-01-20 07:53:27');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('98', 'dolor', 'Possimus nihil voluptatum sit culpa et. Neque ullam suscipit reprehenderit vel perferendis hic alias. Id temporibus neque dolores voluptate.', '0.50', 98, '2020-06-11 14:59:24', '2020-12-20 00:53:52');
-INSERT INTO `products` (`id`, `name`, `desription`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('100', 'quia', 'Dolor odio mollitia perspiciatis totam ut. Qui non quos voluptatum perspiciatis cum et nihil. Officiis et et excepturi dolores sed voluptatem.', '17.06', 100, '2020-09-03 02:15:14', '2020-11-05 18:12:19');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('1', 'cum', 'Exercitationem voluptatem accusamus ratione fuga alias. Voluptas qui ut magnam. Voluptate nam possimus deleniti quam et omnis consectetur.', '244.30', 1, '2020-08-01 12:07:56', '2020-03-02 01:19:52');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('2', 'id', 'Natus sed dolore sunt nobis. Ducimus aut officia sunt cumque repellendus inventore. Quasi doloremque quae ipsam.', '93.28', 2, '2020-06-07 21:12:50', '2020-07-23 15:37:33');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('3', 'laudantium', 'Et nisi ea quia accusantium. Alias aut nihil quo neque rerum. Sequi ullam vero occaecati officia.', '1.90', 3, '2020-06-11 23:17:23', '2020-05-13 20:08:32');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('4', 'enim', 'Minima laboriosam non velit ducimus sapiente. Deserunt neque impedit tempora ipsam autem. Ea aut libero maxime. Sed dolor fugit repudiandae a atque.', '3424112.62', 4, '2020-09-20 02:11:49', '2020-11-13 03:01:02');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('5', 'id', 'Iste quasi quis enim voluptas libero reprehenderit. Sit incidunt facere corrupti fugiat doloribus non dolor. Minima nostrum enim minus vel repellendus quae omnis.', '5.57', 5, '2020-08-07 09:59:01', '2020-04-16 18:38:43');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('6', 'laborum', 'Aliquid accusamus omnis illo vel eaque eum. Et odit incidunt mollitia doloribus voluptas sint nemo.', '1736.20', 6, '2020-02-05 04:27:09', '2020-02-20 13:24:56');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('7', 'ut', 'Optio est aut reprehenderit dolores id delectus ipsa. Dicta quisquam ex dolores dolor asperiores nobis atque. Et cupiditate rerum similique doloremque in repudiandae ut.', '840.25', 7, '2020-03-20 11:09:15', '2020-09-05 18:56:35');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('8', 'mollitia', 'Eos odit repudiandae eius doloremque aut dolorum. Dignissimos assumenda praesentium illo est tenetur. Voluptate aspernatur distinctio temporibus accusantium voluptatem earum repellat.', '1.43', 8, '2020-02-12 19:54:09', '2020-10-13 05:02:44');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('9', 'sit', 'Odit accusantium quia ad autem in. Officia doloribus nulla repellendus voluptas expedita. Veritatis alias accusantium laboriosam. Fugiat blanditiis corrupti sunt dolorem veritatis culpa.', '197287685.53', 9, '2020-08-15 08:11:29', '2020-10-25 13:24:03');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('10', 'sint', 'Velit sed ad deleniti voluptatem et similique. Perspiciatis aut rerum delectus expedita quas veritatis esse. Sed soluta sint repellendus omnis esse quia.', '238.52', 10, '2020-10-28 06:36:57', '2020-03-05 03:51:26');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('11', 'occaecati', 'Nemo modi incidunt beatae esse numquam. Veniam eum unde sed sed dolorem aut.', '67.39', 11, '2021-01-28 21:12:16', '2020-08-15 15:19:26');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('12', 'nobis', 'Rerum tempore corporis et quia animi dolor. Laborum quasi et ut nostrum. Voluptatem eos dolor impedit. Vel numquam totam et aut quia.', '176.00', 12, '2020-07-02 12:19:07', '2020-11-30 09:35:36');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('13', 'commodi', 'Quia blanditiis expedita nihil consequuntur et sunt. Aspernatur velit quia qui ad voluptatem enim vero. Occaecati repellendus sunt aut repudiandae. Consequatur alias ipsum labore sunt.', '182627.50', 13, '2020-05-22 15:37:34', '2020-07-20 13:16:57');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('14', 'delectus', 'Soluta ducimus cumque qui reiciendis incidunt temporibus veritatis. Nobis libero nobis provident aut dolorem quam. Dicta nesciunt vitae omnis quia et porro animi.', '9.06', 14, '2020-03-28 06:15:40', '2020-12-13 22:21:28');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('15', 'hic', 'Consectetur dolores velit quo aliquam saepe occaecati. Quasi harum dolor ipsam id. Sit aut sunt omnis et adipisci exercitationem. Provident aliquid occaecati blanditiis ut quia omnis quia.', '17.30', 15, '2020-06-14 23:13:29', '2021-01-24 07:46:41');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('16', 'voluptatum', 'Soluta saepe id maiores quisquam non fuga harum. Exercitationem neque voluptatum sunt quod inventore. Ut rem nisi aut repellendus tempora iste excepturi quidem. Mollitia nemo voluptatem aspernatur.', '0.00', 16, '2020-10-14 20:14:50', '2020-03-19 08:20:09');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('17', 'tempore', 'Sunt velit dicta laborum et aperiam. Eaque amet tempore non maiores similique laudantium qui maxime. Dignissimos qui sed eveniet rerum corrupti assumenda laudantium.', '99.67', 17, '2021-01-20 04:49:08', '2021-01-21 23:01:09');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('18', 'voluptatem', 'Autem sapiente necessitatibus consequuntur rerum ea adipisci. Doloremque vel qui nam ducimus sit. Nostrum laboriosam similique et id nulla excepturi. Aut qui dolorem est exercitationem.', '7288.42', 18, '2020-04-10 09:31:30', '2020-08-15 19:19:57');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('19', 'atque', 'Esse rerum numquam adipisci. Consequatur perferendis accusamus rerum quis ut totam est. Enim rerum et id veniam id vero voluptatibus.', '44.28', 19, '2020-12-09 09:32:25', '2020-04-19 08:46:30');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('20', 'pariatur', 'Asperiores earum vitae qui nisi aperiam quidem ea. Minima saepe iste velit culpa ut. Voluptatem itaque minima quas fugit.', '0.00', 20, '2020-12-22 07:01:31', '2020-09-14 22:48:58');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('21', 'et', 'Quisquam debitis ut doloremque maxime natus facere. Nulla iusto ipsum itaque ea excepturi. Earum sunt eos soluta velit quas. Autem rerum praesentium perferendis ipsam voluptatibus maxime.', '811708093.32', 21, '2020-04-25 05:31:56', '2021-01-29 18:37:25');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('22', 'non', 'Omnis aut ipsum autem id expedita et. Repudiandae maxime qui nam delectus ullam quis consectetur. Vero corporis esse ut consectetur eum neque nam cum.', '3398749.00', 22, '2020-02-01 02:43:25', '2020-04-06 20:15:03');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('23', 'quia', 'Accusamus et voluptate at doloremque voluptate pariatur quia id. Voluptatibus deleniti et quae tempora cum distinctio. Aut rerum et dolores enim et sed sed. Consequuntur dolorum repudiandae animi a.', '50967.80', 23, '2020-02-13 08:07:29', '2020-08-25 18:13:31');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('24', 'sunt', 'Amet quaerat saepe quisquam. Ullam nihil quasi sint eos molestias quo et. Explicabo libero aspernatur sed molestias adipisci.', '347524451.10', 24, '2020-03-08 04:53:34', '2020-09-21 14:01:07');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('25', 'cupiditate', 'Sequi reprehenderit vel impedit vel. Est perferendis non repudiandae omnis quia quisquam. Nesciunt nesciunt ut libero incidunt laborum deserunt sed.', '55341.58', 25, '2020-02-11 08:04:58', '2020-03-16 02:45:40');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('26', 'illo', 'Dolorem quia ex sed dolor debitis quia id. Praesentium cupiditate consequatur dicta dolor autem nihil. Porro quis voluptates velit nesciunt. Ut qui animi harum quod provident.', '3113.61', 26, '2020-12-05 07:08:23', '2020-06-13 18:29:11');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('27', 'rem', 'Nesciunt cumque sunt sed provident est. Et et molestiae ipsam blanditiis. Quaerat eveniet at commodi consequatur blanditiis aut distinctio.', '482123460.70', 27, '2020-06-22 20:10:04', '2020-02-02 16:33:29');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('28', 'autem', 'Pariatur atque magnam harum qui. Sit suscipit qui asperiores vero consequatur in. Quia qui tempore facilis quasi vel maiores. Aut neque rerum aperiam iusto quam soluta est.', '216999068.12', 28, '2020-10-11 05:12:48', '2020-06-11 19:42:18');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('29', 'quasi', 'Sint aperiam ut sit deleniti. Soluta qui omnis eius necessitatibus. Dolor autem exercitationem adipisci quia. Laboriosam perferendis quae doloremque nisi quia.', '7411440.40', 29, '2020-10-08 18:54:31', '2020-06-13 10:15:54');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('30', 'qui', 'Maxime necessitatibus error qui alias iure odio. Dolores dolor necessitatibus asperiores atque maiores.', '0.82', 30, '2020-04-01 04:28:33', '2020-11-03 04:58:20');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('31', 'nostrum', 'Sit nam qui ratione sit dolores. Quia unde cum architecto fugiat qui. Eligendi maxime culpa explicabo quo est maiores qui sit.', '3518870.00', 31, '2020-10-18 21:22:35', '2020-04-14 08:41:19');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('32', 'ea', 'Ex voluptatem sunt odio accusantium. Necessitatibus vitae iusto repudiandae delectus. Porro ut nihil velit earum itaque est laudantium.', '209077.01', 32, '2020-03-13 07:58:10', '2020-11-19 22:47:00');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('33', 'unde', 'Occaecati in aliquid velit quo modi non quas. Quasi ducimus adipisci sed sunt accusantium ut accusantium. Aperiam iusto ratione perferendis sit praesentium dolorem.', '63043192.77', 33, '2020-12-08 16:42:36', '2020-11-13 01:29:20');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('34', 'quidem', 'Enim nulla natus est sit. Ex ad ut amet quis quia et commodi in. Deleniti itaque et aut iure qui nesciunt.', '592.36', 34, '2020-08-25 18:20:41', '2020-05-26 03:22:16');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('35', 'quod', 'Quas nihil delectus debitis mollitia provident quos. Maiores eum ratione eum esse eveniet est quidem. Delectus nulla nisi doloremque est.', '3.03', 35, '2020-07-12 15:39:11', '2020-04-24 09:59:25');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('36', 'et', 'Qui quo inventore qui hic vitae. Dolores cupiditate beatae qui nihil sint et. Amet voluptatem aliquid nobis iste non.', '6.10', 36, '2020-12-30 22:48:49', '2020-10-09 23:55:14');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('37', 'nobis', 'Voluptatem voluptatem non veniam aut libero. Deleniti maiores tempora aspernatur qui. Et veniam labore qui nemo magnam. Qui error dolores est.', '3185.27', 37, '2020-09-17 12:39:20', '2020-09-18 19:21:51');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('38', 'consequuntur', 'Dolorum quasi et quasi fuga fugiat ad. Voluptatem dolore culpa optio et omnis. Recusandae aliquam aut cum nisi unde.', '475306.20', 38, '2020-08-03 18:40:15', '2020-03-13 07:31:19');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('39', 'qui', 'Eos aut quo in repudiandae. Aut nisi voluptatem quod. Dolor explicabo non reprehenderit asperiores qui delectus aut. Cupiditate nulla sunt esse deserunt.', '353370.40', 39, '2020-05-29 15:26:55', '2020-09-26 13:56:50');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('40', 'vero', 'Numquam atque quia libero ab. Omnis vitae quibusdam nihil blanditiis placeat. Reprehenderit quas omnis quibusdam tenetur ut.', '5.90', 40, '2020-08-31 18:38:20', '2020-12-04 21:45:01');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('41', 'rerum', 'Voluptatum minima sit ad et vero praesentium. Culpa fugit architecto quis consequatur. Dolorem natus id enim officia excepturi.', '51.38', 41, '2020-11-03 12:08:06', '2020-11-24 22:20:24');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('42', 'provident', 'Aut ex dolorem assumenda voluptatem. Rem in recusandae recusandae et. Consequatur enim quo ea quia exercitationem doloremque.', '4.62', 42, '2020-11-08 17:51:27', '2020-06-07 10:14:57');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('43', 'voluptas', 'Quae et ea debitis nobis. Quia qui unde quasi nisi. Esse est assumenda aspernatur earum. Nemo vitae reprehenderit saepe ipsum quasi est aliquam.', '93.69', 43, '2020-12-14 18:54:39', '2020-08-22 10:18:21');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('44', 'libero', 'Occaecati maxime corrupti exercitationem temporibus repudiandae. Vero nulla in et non reprehenderit. Minima magni nihil rem et.', '14335.09', 44, '2020-11-20 22:04:37', '2020-12-13 17:09:43');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('45', 'odio', 'Vel qui numquam assumenda corporis et accusamus illum rerum. Quo culpa harum maxime ipsa quia in. Excepturi non voluptatem et.', '831103244.00', 45, '2020-08-14 03:57:12', '2020-07-11 03:16:01');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('46', 'voluptas', 'Necessitatibus commodi nulla quia. Facere sed sit est vel. Accusamus quia culpa distinctio minima.', '78.00', 46, '2020-10-23 05:59:15', '2020-12-06 02:26:04');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('47', 'dolor', 'Rerum non ipsam dolorem totam aut dolorem ea. Quia consequuntur aliquam voluptas blanditiis voluptatem. Qui nesciunt magni quaerat voluptates. Eius veniam necessitatibus consequuntur temporibus.', '248051.68', 47, '2020-10-26 00:55:21', '2021-01-29 07:12:43');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('48', 'accusantium', 'Beatae optio omnis ut velit. Eos unde distinctio reprehenderit excepturi. Esse assumenda ut iusto praesentium omnis.\nUt dolor consequatur aspernatur quasi. Blanditiis velit officia esse.', '549948.97', 48, '2020-10-18 22:03:48', '2020-11-25 19:24:25');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('49', 'ut', 'Soluta sint ducimus voluptatem molestias quo eius et. Vel unde error aliquam ut.', '7235.96', 49, '2020-03-15 19:25:11', '2020-10-01 13:41:29');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('50', 'voluptas', 'Distinctio ratione minus voluptatem repellendus ab eum. Ducimus molestiae et qui impedit aut totam odio ipsum.', '192124138.07', 50, '2020-05-13 18:23:39', '2020-04-20 02:44:03');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('51', 'illum', 'Et quidem est nesciunt doloremque. Est et autem voluptatem cumque. Eum dolor debitis fuga et. Doloribus aliquam sequi aut.', '11514.00', 51, '2021-01-12 00:34:58', '2020-07-04 10:11:57');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('52', 'corrupti', 'Sit omnis sunt dignissimos fugiat deleniti non et fugiat. Corrupti et qui quidem qui magni. Nemo vel id aut expedita est eum modi. Placeat est quis doloremque delectus magni et.', '469654.54', 52, '2020-08-19 08:22:17', '2020-05-08 18:41:29');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('53', 'non', 'Incidunt assumenda vel vel qui rem eaque. Est quaerat est aspernatur numquam officiis.', '0.47', 53, '2020-07-13 14:28:23', '2020-10-17 04:05:29');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('54', 'a', 'Id consectetur necessitatibus tenetur omnis excepturi expedita. Voluptas et nostrum illo inventore. Voluptatibus qui autem quo delectus.', '0.00', 54, '2020-05-19 19:38:00', '2020-06-24 10:30:56');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('55', 'qui', 'Et nulla numquam non non atque sequi numquam velit. Rerum rem necessitatibus inventore autem reprehenderit. Earum maiores unde incidunt aspernatur voluptatem itaque.', '39228583.68', 55, '2020-05-25 06:54:37', '2020-05-07 07:01:33');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('56', 'non', 'Autem odio culpa qui sint vitae maxime. Et et minima sint soluta dolor accusamus nemo harum. Ducimus quasi quia id numquam dolor tempore similique. Dolorum aperiam voluptas iste saepe enim.', '4.90', 56, '2020-06-05 01:24:12', '2020-10-28 21:49:27');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('57', 'rerum', 'Dolor sint laborum nulla aperiam incidunt iste quo. Officiis facilis delectus quae qui ipsa totam.', '58.50', 57, '2021-01-03 19:44:59', '2021-01-27 03:16:19');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('58', 'consequatur', 'Omnis sint totam consequatur optio. Ratione laudantium doloribus laudantium aspernatur asperiores iure deserunt. Mollitia atque cumque occaecati aut repellendus asperiores quibusdam.', '101.95', 58, '2020-05-12 08:53:51', '2020-09-17 06:04:44');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('59', 'ducimus', 'Repudiandae perspiciatis modi ex mollitia sed omnis perspiciatis. Odit iste ad repellendus et. Atque quis rerum quaerat quidem. Omnis alias quod dolores officiis sed consequatur nihil magnam.', '111950.41', 59, '2020-09-12 00:03:58', '2021-01-16 17:21:16');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('60', 'quae', 'Facilis voluptatem non ut necessitatibus earum. Nostrum modi qui ratione illum. Ut dolor hic dolorem et non dolores. Non maxime cum quas maiores dolore.', '2844.00', 60, '2020-10-01 06:19:33', '2020-11-13 14:00:12');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('61', 'eligendi', 'Doloremque voluptatem accusamus eos asperiores. Sequi et at tenetur. Nulla quia iure odio necessitatibus ducimus sunt magnam sed. Et dignissimos voluptates rerum nihil ea asperiores optio.', '1763.00', 61, '2020-10-25 02:34:39', '2020-10-12 15:23:42');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('62', 'cum', 'Vitae aut ipsa hic. Et fugiat mollitia laborum sunt. Ducimus dolore quidem et dolore reprehenderit ut quas. Dolor tenetur est commodi ex explicabo vero commodi beatae.', '917086.08', 62, '2020-04-23 16:06:42', '2020-03-07 21:34:27');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('63', 'recusandae', 'Quidem id aperiam eos officia qui et. Atque nesciunt dolor magnam sit autem. Quidem totam et non ut quos earum. Molestiae et odio sit et.', '29709618.44', 63, '2021-01-28 03:16:49', '2020-03-28 11:17:45');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('64', 'accusamus', 'Recusandae quae aperiam culpa inventore facilis. Ut aliquam repellendus sed hic sit non. Natus dignissimos vitae alias labore.', '387.72', 64, '2020-11-26 19:37:24', '2020-09-06 18:18:02');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('65', 'ipsa', 'Nobis qui ut velit quibusdam rerum ut. Inventore reiciendis dolorum quae non repudiandae occaecati ut corrupti. Consequatur aut praesentium omnis explicabo vitae quia. Quod optio nemo aut minima.', '818.45', 65, '2020-05-06 15:38:10', '2020-10-04 13:56:58');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('66', 'at', 'Rerum velit deserunt aspernatur natus quos qui. Corporis aliquid placeat sit quasi unde maiores. Et quisquam quae ut qui.', '267.43', 66, '2020-07-27 09:36:57', '2020-08-11 22:29:26');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('67', 'voluptatem', 'Modi consequatur qui officia similique. Provident et quo sit rem autem.', '2882076.06', 67, '2021-01-04 04:34:40', '2020-05-16 07:25:47');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('68', 'et', 'Aut ullam nisi optio repudiandae et aut. Consequatur porro fuga soluta harum. Aut sapiente optio libero repudiandae dicta voluptates culpa.', '322122.04', 68, '2020-12-31 00:58:34', '2020-03-31 10:34:35');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('69', 'non', 'Ducimus ullam omnis aut dolores minima. Sit eum dolores quia soluta repellat officia sed esse. Non consequuntur officia rerum facilis.', '28.54', 69, '2021-01-24 18:39:33', '2020-05-01 10:15:51');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('70', 'odit', 'Voluptatem nulla quod illum corrupti totam aliquid officiis. Et nulla porro natus dolorem architecto sequi sed. Iure voluptate quo et corrupti.', '0.00', 70, '2020-03-13 10:26:22', '2020-10-16 17:45:01');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('71', 'qui', 'Eveniet nemo dolorum maxime eos voluptatem. Magnam labore dolor ut facere quod voluptates. Vero et enim tempore aut accusantium autem. Iure labore et explicabo recusandae.', '242294.99', 71, '2020-06-12 08:37:12', '2020-04-04 21:15:25');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('72', 'nostrum', 'Error explicabo iusto et nulla quo in eos. Eum nam perferendis aut sed vitae omnis atque ut. Possimus aut sit consequatur et et unde. Dicta nihil ipsum qui quo.', '7242874.71', 72, '2020-03-11 12:20:24', '2020-11-30 14:15:20');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('73', 'id', 'Tempora et aut est consequatur fugit dolor numquam. Eaque sequi aperiam architecto sequi. Repellendus nam tempora quam sapiente. Velit omnis repudiandae cum est odio nobis explicabo expedita.', '3009522.31', 73, '2020-04-01 22:11:05', '2020-02-06 00:09:19');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('74', 'fugiat', 'Recusandae numquam a necessitatibus necessitatibus. At eligendi excepturi aliquid. Omnis occaecati optio aspernatur labore magni. Atque et ullam eos quae enim.', '0.00', 74, '2020-12-30 05:28:58', '2021-01-29 04:29:47');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('75', 'et', 'Autem voluptas facere mollitia et facilis et eligendi. Placeat enim sit sit sequi dolor. Aspernatur in libero qui assumenda quae quis. Officia quos voluptas praesentium et consequatur sint.', '0.00', 75, '2020-07-12 16:17:09', '2020-10-27 17:16:35');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('76', 'vel', 'Facere nisi culpa tempore enim hic aut. Ut exercitationem quibusdam repellendus dolores.', '4.00', 76, '2020-10-16 09:04:08', '2020-02-02 23:16:14');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('77', 'voluptatem', 'Quos porro quasi dolore et. Quae voluptatem sint quia rerum. Qui quo voluptas quia possimus et.', '4605.44', 77, '2020-04-27 11:12:28', '2020-08-09 20:57:27');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('78', 'aut', 'Quia necessitatibus a repellat qui dolorum. Dolorem et atque doloremque ut eveniet. Sequi praesentium quae eligendi minima. Vel modi id et harum.', '2604333.00', 78, '2020-09-05 08:50:58', '2020-09-07 15:33:13');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('79', 'voluptatum', 'Iure eos tempora omnis eum soluta et. Voluptatem ea perferendis quos soluta voluptas aut. Consequatur veritatis illum officiis dolor repellat suscipit nobis. Explicabo est maxime qui.', '279.02', 79, '2020-12-07 17:30:38', '2020-02-01 01:49:38');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('80', 'vel', 'Excepturi rerum molestiae voluptatem porro nam. Qui qui dolor doloremque magni quo. Mollitia maxime et delectus commodi sit a.', '7.67', 80, '2020-06-25 17:27:12', '2020-06-01 02:19:58');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('81', 'at', 'Vero commodi alias et doloremque vero. Voluptas ut qui consequatur voluptatum qui dolores maiores. Occaecati cupiditate omnis est soluta architecto non et.', '63923.47', 81, '2020-10-27 03:00:29', '2020-11-01 13:39:42');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('82', 'necessitatibus', 'Modi et eius molestiae aliquam vitae laudantium quia. Aut quidem consectetur nihil tenetur. Aut sint unde qui et. Ducimus cum maxime nemo est consectetur debitis.', '21189541.88', 82, '2020-08-10 18:41:04', '2020-11-29 10:31:33');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('83', 'natus', 'Dolore in cumque sed repellendus autem ut suscipit. Qui doloremque nihil aliquam aut. Numquam velit ea non quas nostrum. Ut architecto magnam aut.', '8.19', 83, '2020-03-17 17:18:19', '2020-02-04 15:48:08');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('84', 'ipsum', 'Rerum rerum voluptatibus in pariatur. In sit et illo qui occaecati et sapiente eos.', '228086.61', 84, '2021-01-18 12:16:38', '2020-10-23 07:43:32');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('85', 'possimus', 'Et odit id quia consequuntur nihil labore voluptates. Nihil itaque ex velit labore libero consequatur. Ex dolor optio aliquid natus deserunt tempore.', '5973.27', 85, '2020-05-05 13:54:44', '2020-04-15 18:51:03');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('86', 'dolorum', 'Voluptas commodi nesciunt delectus ut natus sit perferendis. Aperiam non debitis sit quia. Est corrupti est reprehenderit. Quo et nemo ut aperiam.', '0.00', 86, '2020-02-28 19:25:28', '2020-07-30 10:49:51');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('87', 'quasi', 'Temporibus et eum ut vero enim nemo non sunt. Expedita sed amet iusto necessitatibus. Inventore officia accusantium non neque voluptatem.', '210.26', 87, '2020-10-30 01:26:39', '2020-02-17 17:20:35');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('88', 'expedita', 'Ipsum sunt sit ut voluptate accusantium magnam at. Quam ea eos excepturi. Odio quia dicta quisquam reiciendis. Doloremque porro dolor natus sed qui error.', '276208.83', 88, '2020-10-20 22:39:54', '2020-05-20 10:07:04');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('89', 'sed', 'Temporibus aut est amet fugit. Architecto sit tenetur vero dolorem fugit architecto. Quaerat quasi illo dolores voluptatem incidunt.', '4.40', 89, '2020-05-21 22:27:56', '2020-07-03 15:29:28');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('90', 'odio', 'Vel nisi hic sed dolorem fuga consequatur officiis quia. Esse aliquam nam odio molestiae et vel. Saepe aut doloremque incidunt voluptatem.', '0.00', 90, '2020-06-27 07:03:57', '2020-02-25 19:05:49');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('91', 'asperiores', 'At qui dolorum possimus qui voluptate inventore. Ab ea consequuntur amet eum ut nisi. Qui dolor nisi laboriosam aut nobis molestiae aut. Optio omnis mollitia inventore velit.', '165252381.65', 91, '2020-10-25 00:24:54', '2020-03-18 12:32:25');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('92', 'commodi', 'Illum sed quasi illo consequatur iusto et ut ipsam. Placeat nemo nam rerum reiciendis. Et esse sed sit sit voluptatem quia.\nNatus et veritatis est quia nobis harum quia. Dignissimos nam a sunt minus.', '0.00', 92, '2020-08-20 11:16:24', '2020-11-19 09:02:52');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('93', 'dicta', 'Impedit et cumque est sint. Quisquam occaecati aut velit sunt et optio amet. Repudiandae quae enim aut. Impedit nisi in officiis fugiat quis.', '27804.80', 93, '2020-10-27 08:35:45', '2020-03-30 10:20:53');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('94', 'commodi', 'Odit beatae consequuntur deserunt culpa voluptatibus possimus. Deserunt sit earum voluptatibus accusantium. Non qui et quisquam voluptatem.', '950.00', 94, '2020-04-06 15:01:10', '2020-05-11 02:09:24');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('95', 'sed', 'Et sed culpa sed est expedita recusandae praesentium molestiae. Animi consequatur ea id sed autem esse et eum. Nihil provident quia alias et autem.', '0.00', 95, '2020-07-27 14:19:31', '2020-11-13 04:44:30');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('96', 'nesciunt', 'Placeat dolore sit est laudantium aut neque. Fugit pariatur sed voluptas aut. Assumenda repudiandae cupiditate quis explicabo dignissimos. Quia qui sunt quod doloremque dolor quam.', '10.14', 96, '2020-12-21 12:46:21', '2020-06-14 01:10:59');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('97', 'labore', 'Aut vel inventore officia. Nulla rerum dicta in. Et nihil nam est sequi quia non. Eveniet quisquam temporibus eos quisquam voluptates saepe tenetur.', '5.27', 97, '2020-05-27 14:06:39', '2020-11-30 22:56:27');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('99', 'quae', 'Rerum qui illum omnis et et sint et. A quae quis in ipsam vel possimus esse. Reprehenderit est voluptate at quia unde.', '9.83', 99, '2020-06-07 23:13:23', '2021-01-20 07:53:27');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('98', 'dolor', 'Possimus nihil voluptatum sit culpa et. Neque ullam suscipit reprehenderit vel perferendis hic alias. Id temporibus neque dolores voluptate.', '0.50', 98, '2020-06-11 14:59:24', '2020-12-20 00:53:52');
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `catalog_id`, `created_at`, `updated_at`) VALUES ('100', 'quia', 'Dolor odio mollitia perspiciatis totam ut. Qui non quos voluptatum perspiciatis cum et nihil. Officiis et et excepturi dolores sed voluptatem.', '17.06', 100, '2020-09-03 02:15:14', '2020-11-05 18:12:19');
 
 
 CREATE TABLE orders (
@@ -382,7 +382,7 @@ CREATE TABLE discounts (
   id int(10) unsigned NOT NULL primary key,
   user_id INT UNSIGNED,
   product_id INT UNSIGNED,
-  discount FLOAT UNSIGNED COMMENT 'Величина скидки от 0.0 до 1.0',
+  discount int unsigned,
   started_at DATETIME,
   finished_at DATETIME,
   created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
@@ -604,65 +604,65 @@ INSERT INTO `shops` (`id`, `name`, `rubric_id`, `created_at`, `updated_at`) VALU
 INSERT INTO `shops` (`id`, `name`, `rubric_id`, `created_at`, `updated_at`) VALUES ('100', 'nesciunt', '10', '2020-05-08 14:48:09', '2010-04-29 14:52:31');
 
 
-CREATE TABLE courier (
+CREATE TABLE couriers (
   id int(10) primary key,
   shop_id int unsigned NOT NULL,
   name VARCHAR(255) COMMENT 'Имя покупателя',
   phone_number VARCHAR(255) COMMENT 'Контактный номер'
 ) COMMENT = 'Курьеры магазинов';
 
-INSERT INTO `courier` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('1', '1', 'iste', '171-653-9581x14682');
-INSERT INTO `courier` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('2', '2', 'esse', '949.020.5242');
-INSERT INTO `courier` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('3', '3', 'aliquid', '+74(4)5261179386');
-INSERT INTO `courier` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('4', '4', 'aut', '232-805-2218x63773');
-INSERT INTO `courier` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('5', '5', 'enim', '802.573.5130x6589');
-INSERT INTO `courier` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('6', '6', 'odit', '186-621-3013');
-INSERT INTO `courier` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('7', '7', 'eius', '(396)008-8626');
-INSERT INTO `courier` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('8', '8', 'voluptate', '1-143-968-7346');
-INSERT INTO `courier` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('9', '9', 'culpa', '228.606.8602x6845');
-INSERT INTO `courier` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('10', '10', 'fugiat', '685.984.7417x113');
-INSERT INTO `courier` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('11', '11', 'molestiae', '(295)737-6751');
-INSERT INTO `courier` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('12', '12', 'mollitia', '134.536.7530x88575');
-INSERT INTO `courier` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('13', '13', 'ad', '1-777-435-8360x42939');
-INSERT INTO `courier` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('14', '14', 'harum', '1-355-774-5513x738');
-INSERT INTO `courier` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('15', '15', 'et', '07657479969');
-INSERT INTO `courier` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('16', '16', 'porro', '599.385.6995x90657');
-INSERT INTO `courier` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('17', '17', 'id', '1-843-320-8452x051');
-INSERT INTO `courier` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('18', '18', 'impedit', '763-696-0487x889');
-INSERT INTO `courier` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('19', '19', 'nihil', '(505)929-3822x9349');
-INSERT INTO `courier` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('20', '20', 'qui', '(942)665-7577x002');
-INSERT INTO `courier` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('21', '21', 'enim', '1-084-600-1287x291');
-INSERT INTO `courier` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('22', '22', 'omnis', '1-341-560-5989x2799');
-INSERT INTO `courier` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('23', '23', 'dolorem', '179.167.2074');
-INSERT INTO `courier` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('24', '24', 'mollitia', '062-820-1745x1203');
-INSERT INTO `courier` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('25', '25', 'occaecati', '1-622-995-3568');
-INSERT INTO `courier` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('26', '26', 'reprehenderit', '821.704.7603x69118');
-INSERT INTO `courier` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('27', '27', 'velit', '1-385-087-3551x9479');
-INSERT INTO `courier` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('28', '28', 'autem', '05769955278');
-INSERT INTO `courier` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('29', '29', 'in', '461-264-3894x557');
-INSERT INTO `courier` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('30', '30', 'maxime', '576-626-0412x060');
-INSERT INTO `courier` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('31', '31', 'enim', '(331)982-9194');
-INSERT INTO `courier` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('32', '32', 'et', '970.281.4666');
-INSERT INTO `courier` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('33', '33', 'ut', '(944)199-2996x1632');
-INSERT INTO `courier` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('34', '34', 'harum', '1-597-725-4803');
-INSERT INTO `courier` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('35', '35', 'temporibus', '1-258-397-6847x34326');
-INSERT INTO `courier` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('36', '36', 'cumque', '732-206-3874x8011');
-INSERT INTO `courier` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('37', '37', 'soluta', '445.797.3366');
-INSERT INTO `courier` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('38', '38', 'sit', '1-719-112-3488');
-INSERT INTO `courier` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('39', '39', 'magnam', '08918581815');
-INSERT INTO `courier` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('40', '40', 'repudiandae', '842-029-9322x55806');
-INSERT INTO `courier` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('41', '41', 'aliquam', '(162)355-7235x956');
-INSERT INTO `courier` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('42', '42', 'maiores', '046.631.8599x0283');
-INSERT INTO `courier` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('43', '43', 'fugiat', '108.182.8100x2087');
-INSERT INTO `courier` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('44', '44', 'non', '1-968-963-9289');
-INSERT INTO `courier` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('45', '45', 'corrupti', '(410)384-0283x44836');
-INSERT INTO `courier` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('46', '46', 'voluptas', '1-843-502-4932x406');
-INSERT INTO `courier` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('47', '47', 'dolorem', '937.648.5397x61766');
-INSERT INTO `courier` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('48', '48', 'recusandae', '1-549-296-0131');
-INSERT INTO `courier` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('49', '49', 'dolore', '918-905-4107');
-INSERT INTO `courier` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('50', '50', 'id', '(290)347-1499x483');
+INSERT INTO `couriers` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('1', '1', 'iste', '171-653-9581x14682');
+INSERT INTO `couriers` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('2', '2', 'esse', '949.020.5242');
+INSERT INTO `couriers` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('3', '3', 'aliquid', '+74(4)5261179386');
+INSERT INTO `couriers` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('4', '4', 'aut', '232-805-2218x63773');
+INSERT INTO `couriers` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('5', '5', 'enim', '802.573.5130x6589');
+INSERT INTO `couriers` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('6', '6', 'odit', '186-621-3013');
+INSERT INTO `couriers` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('7', '7', 'eius', '(396)008-8626');
+INSERT INTO `couriers` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('8', '8', 'voluptate', '1-143-968-7346');
+INSERT INTO `couriers` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('9', '9', 'culpa', '228.606.8602x6845');
+INSERT INTO `couriers` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('10', '10', 'fugiat', '685.984.7417x113');
+INSERT INTO `couriers` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('11', '11', 'molestiae', '(295)737-6751');
+INSERT INTO `couriers` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('12', '12', 'mollitia', '134.536.7530x88575');
+INSERT INTO `couriers` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('13', '13', 'ad', '1-777-435-8360x42939');
+INSERT INTO `couriers` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('14', '14', 'harum', '1-355-774-5513x738');
+INSERT INTO `couriers` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('15', '15', 'et', '07657479969');
+INSERT INTO `couriers` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('16', '16', 'porro', '599.385.6995x90657');
+INSERT INTO `couriers` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('17', '17', 'id', '1-843-320-8452x051');
+INSERT INTO `couriers` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('18', '18', 'impedit', '763-696-0487x889');
+INSERT INTO `couriers` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('19', '19', 'nihil', '(505)929-3822x9349');
+INSERT INTO `couriers` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('20', '20', 'qui', '(942)665-7577x002');
+INSERT INTO `couriers` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('21', '21', 'enim', '1-084-600-1287x291');
+INSERT INTO `couriers` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('22', '22', 'omnis', '1-341-560-5989x2799');
+INSERT INTO `couriers` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('23', '23', 'dolorem', '179.167.2074');
+INSERT INTO `couriers` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('24', '24', 'mollitia', '062-820-1745x1203');
+INSERT INTO `couriers` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('25', '25', 'occaecati', '1-622-995-3568');
+INSERT INTO `couriers` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('26', '26', 'reprehenderit', '821.704.7603x69118');
+INSERT INTO `couriers` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('27', '27', 'velit', '1-385-087-3551x9479');
+INSERT INTO `couriers` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('28', '28', 'autem', '05769955278');
+INSERT INTO `couriers` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('29', '29', 'in', '461-264-3894x557');
+INSERT INTO `couriers` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('30', '30', 'maxime', '576-626-0412x060');
+INSERT INTO `couriers` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('31', '31', 'enim', '(331)982-9194');
+INSERT INTO `couriers` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('32', '32', 'et', '970.281.4666');
+INSERT INTO `couriers` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('33', '33', 'ut', '(944)199-2996x1632');
+INSERT INTO `couriers` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('34', '34', 'harum', '1-597-725-4803');
+INSERT INTO `couriers` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('35', '35', 'temporibus', '1-258-397-6847x34326');
+INSERT INTO `couriers` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('36', '36', 'cumque', '732-206-3874x8011');
+INSERT INTO `couriers` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('37', '37', 'soluta', '445.797.3366');
+INSERT INTO `couriers` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('38', '38', 'sit', '1-719-112-3488');
+INSERT INTO `couriers` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('39', '39', 'magnam', '08918581815');
+INSERT INTO `couriers` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('40', '40', 'repudiandae', '842-029-9322x55806');
+INSERT INTO `couriers` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('41', '41', 'aliquam', '(162)355-7235x956');
+INSERT INTO `couriers` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('42', '42', 'maiores', '046.631.8599x0283');
+INSERT INTO `couriers` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('43', '43', 'fugiat', '108.182.8100x2087');
+INSERT INTO `couriers` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('44', '44', 'non', '1-968-963-9289');
+INSERT INTO `couriers` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('45', '45', 'corrupti', '(410)384-0283x44836');
+INSERT INTO `couriers` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('46', '46', 'voluptas', '1-843-502-4932x406');
+INSERT INTO `couriers` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('47', '47', 'dolorem', '937.648.5397x61766');
+INSERT INTO `couriers` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('48', '48', 'recusandae', '1-549-296-0131');
+INSERT INTO `couriers` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('49', '49', 'dolore', '918-905-4107');
+INSERT INTO `couriers` (`id`, `shop_id`, `name`, `phone_number`) VALUES ('50', '50', 'id', '(290)347-1499x483');
 
-drop table stock_products;
+
 CREATE TABLE stock_products (
   id int(10) unsigned NOT NULL primary key,
   shop_id INT UNSIGNED,
@@ -803,8 +803,8 @@ select * from orders;
 update orders set updated_at = now() where updated_at < created_at;
 update orders set user_id = floor(1 + rand() * 100);
 
-select * from courier;
-update courier set shop_id = floor(1 + rand() * 50);
+select * from couriers;
+update couriers set shop_id = floor(1 + rand() * 50);
 
 select * from orders_products;
 update orders_products set updated_at = now() where updated_at < created_at;
@@ -838,7 +838,7 @@ alter table discounts
  	add constraint discounts_product_id_fk
  		foreign key (product_id) references products(id), 
  	add constraint discounts_user_id_fk
- 		foreign key (user_id) references users(id); 
+ 		foreign key (user_id) references users(id);
 
 alter table orders_products 
  	add constraint orders_products_order_id_fk
@@ -852,8 +852,8 @@ alter table stock_products
  	add constraint stock_products_product_id_fk
  		foreign key (product_id) references products(id);
  	
-alter table courier 
- 	add constraint courier_shop_id_fk
+alter table couriers 
+ 	add constraint couriers_shop_id_fk
  		foreign key (shop_id) references shops(id);
 
 alter table catalogs 
@@ -863,12 +863,8 @@ alter table catalogs
 alter table shops 
  	add constraint shops_rubric_id_fk
  		foreign key (rubric_id) references rubrics(id);
- 	
-alter table courier 
- 	add constraint courier_shop_id_fk
- 		foreign key (shop_id) references shops(id);
- 	
-select * from courier;
+ 
+ 
 
 -- вложенные
 -- Определить среднюю цену по разделам № 91 и 26 каталога.
@@ -935,27 +931,10 @@ create view shop_cat as select * from shops order by name desc;
 select * from shop_cat;
 
 -- Хранимые функции/ Триггер
--- 1
 
 delimiter //
 create trigger orders_products_count after insert on orders_products
 for each row
 begin
   select count(*) into @total from orders_products;
-end//
-
--- 2
-
-delimiter //
-create procedure cycle (in num int)
-begin 
-  declare i INT default 0;
-  if (num > 0) then 
-	while i < num DO
-  	select now();
-  	set i = i + 1;
-	end while;
-  else 
-	select 'Ошибочное значение параметра';
-  end if;
 end//
